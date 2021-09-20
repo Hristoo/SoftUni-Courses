@@ -8,56 +8,78 @@ class TestClass
 {
     static void Main(string[] args)
     {
-        // heVVodar!gniV
+
+
         string input = Console.ReadLine();
-        string command = Console.ReadLine();
+        int greenCount = 0;
+        int redCount = 0;
+        int blueCount = 0;
+        int purpleCount = 0;
+        int yelowCount = 0;
+        int brounCount = 0;
 
-        while (command != "Reveal")
+
+
+        Regex rx = new Regex(@"(#|@)+(?<color>[a-z]{3,})(@|#)+.*?(?<count>\/[0-9]+\/)",
+          RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
+
+
+        MatchCollection matches = rx.Matches(input);
+
+        // Report on each match.
+        foreach (Match match in matches)
         {
-            // ChangeAll:|:{substring}:|:{replacement} 
-            string[] commandInfo = command.Split(":|:");
-            string action = commandInfo[0];
-            string substring = commandInfo[1];
+            GroupCollection groups = match.Groups;
 
-            if (action == "ChangeAll")
+            if (groups["color"].Value == "green")
             {
-                string replacement = commandInfo[2];
+                string x = groups["count"].Value.Replace("/", "");
+                greenCount += int.Parse(x);
 
-                input = input.Replace(substring, replacement);
-                Console.WriteLine(input);
+                Console.WriteLine($"You found {greenCount} green eggs!");
+                greenCount = 0;
             }
-            else if (action == "Reverse")
+            else if (groups["color"].Value == "red")
             {
-
-                if (input.Contains(substring))
-                {
-                    while (input.Contains(substring))
-                    {
-                        input = input.Replace(substring, string.Empty);
-
-                        char[] sub = substring.ToCharArray();
-                        Array.Reverse(sub);
-                        string substr = new string(sub);
-                        input = input + "" + substr;
-                        Console.WriteLine($"{input}");
-
-                    }
-                    Console.WriteLine($"{input}");
-
-                }
-                else
-                {
-                    Console.WriteLine("error");
-                }
-
+                string x = groups["count"].Value.Replace("/", "");
+                redCount += int.Parse(x);
+                Console.WriteLine($"You found {redCount} red eggs!");
+                redCount = 0;
             }
-            else if (action == "InsertSpace")
-            {// InsertSpace:|:{index}
-                input = input.Insert(int.Parse(substring), " ");
-                Console.WriteLine($"{input}");
+            else if (groups["color"].Value == "blue")
+            {
+                string x = groups["count"].Value.Replace("/", "");
+                blueCount += int.Parse(x);
+
+                Console.WriteLine($"You found {blueCount} blue eggs!");
+                blueCount = 0;
             }
-            command = Console.ReadLine();
+            else if (groups["color"].Value == "purple")
+            {
+                string x = groups["count"].Value.Replace("/", "");
+                purpleCount += int.Parse(x);
+
+                Console.WriteLine($"You found {purpleCount} purple eggs!");
+                purpleCount = 0;
+            }
+            else if (groups["color"].Value == "yelow")
+            {
+                string x = groups["count"].Value.Replace("/", "");
+                yelowCount += int.Parse(x);
+
+                Console.WriteLine($"You found {yelowCount} yelow eggs!");
+                yelowCount = 0;
+            }
+            else if (groups["color"].Value == "orange")
+            {
+                string x = groups["count"].Value.Replace("/", "");
+                brounCount += int.Parse(x);
+
+                Console.WriteLine($"You found {brounCount} broun eggs!");
+                brounCount = 0;
+            }
+           
         }
-        Console.WriteLine($"You have a new text message: {input}");
     }
 }
