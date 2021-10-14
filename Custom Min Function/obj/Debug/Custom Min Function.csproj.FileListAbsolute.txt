@@ -1,0 +1,6 @@
+C:\Users\Iliana\Desktop\softuni\Custom Min Function\Custom Min Function\bin\Debug\Custom Min Function.exe.config
+C:\Users\Iliana\Desktop\softuni\Custom Min Function\Custom Min Function\bin\Debug\Custom Min Function.exe
+C:\Users\Iliana\Desktop\softuni\Custom Min Function\Custom Min Function\bin\Debug\Custom Min Function.pdb
+C:\Users\Iliana\Desktop\softuni\Custom Min Function\Custom Min Function\obj\Debug\Custom Min Function.csproj.CoreCompileInputs.cache
+C:\Users\Iliana\Desktop\softuni\Custom Min Function\Custom Min Function\obj\Debug\Custom Min Function.exe
+C:\Users\Iliana\Desktop\softuni\Custom Min Function\Custom Min Function\obj\Debug\Custom Min Function.pdb
