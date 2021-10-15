@@ -1,0 +1,7 @@
+C:\Users\Iliana\Desktop\softuni\Action Point\Action Point\obj\Debug\Action Point.csproj.AssemblyReference.cache
+C:\Users\Iliana\Desktop\softuni\Action Point\Action Point\obj\Debug\Action Point.csproj.CoreCompileInputs.cache
+C:\Users\Iliana\Desktop\softuni\Action Point\Action Point\bin\Debug\Action Point.exe.config
+C:\Users\Iliana\Desktop\softuni\Action Point\Action Point\bin\Debug\Action Point.exe
+C:\Users\Iliana\Desktop\softuni\Action Point\Action Point\bin\Debug\Action Point.pdb
+C:\Users\Iliana\Desktop\softuni\Action Point\Action Point\obj\Debug\Action Point.exe
+C:\Users\Iliana\Desktop\softuni\Action Point\Action Point\obj\Debug\Action Point.pdb

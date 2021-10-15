@@ -1,0 +1,6 @@
+C:\Users\Iliana\Desktop\softuni\Knights of Honor\Knights of Honor\bin\Debug\Knights of Honor.exe.config
+C:\Users\Iliana\Desktop\softuni\Knights of Honor\Knights of Honor\bin\Debug\Knights of Honor.exe
+C:\Users\Iliana\Desktop\softuni\Knights of Honor\Knights of Honor\bin\Debug\Knights of Honor.pdb
+C:\Users\Iliana\Desktop\softuni\Knights of Honor\Knights of Honor\obj\Debug\Knights of Honor.csproj.CoreCompileInputs.cache
+C:\Users\Iliana\Desktop\softuni\Knights of Honor\Knights of Honor\obj\Debug\Knights of Honor.exe
+C:\Users\Iliana\Desktop\softuni\Knights of Honor\Knights of Honor\obj\Debug\Knights of Honor.pdb
