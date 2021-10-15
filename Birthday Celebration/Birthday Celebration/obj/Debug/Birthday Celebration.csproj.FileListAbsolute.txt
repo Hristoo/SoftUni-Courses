@@ -1,0 +1,7 @@
+C:\Users\Iliana\Desktop\softuni\Birthday Celebration\Birthday Celebration\bin\Debug\Birthday Celebration.exe.config
+C:\Users\Iliana\Desktop\softuni\Birthday Celebration\Birthday Celebration\bin\Debug\Birthday Celebration.exe
+C:\Users\Iliana\Desktop\softuni\Birthday Celebration\Birthday Celebration\bin\Debug\Birthday Celebration.pdb
+C:\Users\Iliana\Desktop\softuni\Birthday Celebration\Birthday Celebration\obj\Debug\Birthday Celebration.csproj.AssemblyReference.cache
+C:\Users\Iliana\Desktop\softuni\Birthday Celebration\Birthday Celebration\obj\Debug\Birthday Celebration.csproj.CoreCompileInputs.cache
+C:\Users\Iliana\Desktop\softuni\Birthday Celebration\Birthday Celebration\obj\Debug\Birthday Celebration.exe
+C:\Users\Iliana\Desktop\softuni\Birthday Celebration\Birthday Celebration\obj\Debug\Birthday Celebration.pdb
