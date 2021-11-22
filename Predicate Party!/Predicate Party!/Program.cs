@@ -10,51 +10,55 @@ namespace Predicate_Party_
         {
             List<string> names = Console.ReadLine().Split().ToList();
 
+            var dictionary = new Dictionary<string, Predicate<string>>();
+
             string command = Console.ReadLine();
 
-            while (command != "Party!")
+            while (command != "Print")
             {
-                string[] commandInfo = command.Split();
+                string[] commandArgs = command.Split(";");
+                string action = commandArgs[0];
+                string predicateAction = commandArgs[1];
+                string value = commandArgs[2];
+                string key = predicateAction + "_" + value;
 
-                Predicate<string> predivcate = Getpredicate(commandInfo[1], commandInfo[2]);
-
-                if (commandInfo[0] == "Remove")
+                if (action == "Add filter")
                 {
-                    names.RemoveAll(predivcate);
+                    
+                    Predicate<string> predicate = Getpredicate(predicateAction, value);
+                    dictionary.Add(key, predicate);
                 }
-                else if (commandInfo[0] == "Double")
+                else
                 {
-                    List<string> doubledNames = names.FindAll(predivcate);
-                    if (doubledNames.Any())
-                    {
-                        int index = names.FindIndex(predivcate);
-                        names.InsertRange(index, doubledNames);
-                    }
+                    dictionary.Remove(key);
                 }
 
                 command = Console.ReadLine();
             }
+            foreach (var (key, predicate) in dictionary)
+            {
+                names.RemoveAll(predicate);
+            }
 
-            if (names.Any())
-            {
-                Console.WriteLine($"{string.Join(", ", names)} are going to the party!");
-            }
-            else
-            {
-                Console.WriteLine("Nobody is going to the party!");
-            }
+            Console.WriteLine(string.Join(" ", names));
+            
         }
 
         private static Predicate<string> Getpredicate(string commandInfo, string param)
         {
-            if (commandInfo == "StartsWith")
+            if (commandInfo == "Starts with")
             {
                 return x => x.StartsWith(param);
             }
 
-            if (commandInfo == "EndsWith")
+            if (commandInfo == "Ends with")
             {
                 return x => x.EndsWith(param);
+            }
+
+            if (commandInfo == "Contains")
+            {
+                return x => x.Contains(param);
             }
 
             int lenght = int.Parse(param);
